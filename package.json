@@ -17,7 +17,9 @@
     "react-native-reanimated": "1.0.1",
     "react-native-web": "^0.11.4",
     "react-navigation": "^3.11.0",
-    "react-navigation-stack": "^1.10.3"
+    "react-navigation-stack": "^1.10.3",
+    "expo-barcode-scanner": "~5.0.1",
+    "expo-permissions": "~5.0.1"
   },
   "devDependencies": {
     "babel-preset-expo": "^5.1.1"

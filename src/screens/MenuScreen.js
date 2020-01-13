@@ -5,9 +5,13 @@ const MenuScreen = ({ navigation }) => {
   return (
     <View>
       <Text style={styles.text}>Jumpi Food</Text>
-      <Button
+      {/* <Button
         title='Ir para Lista (Botão)'
         onPress={() => navigation.navigate('Lista')}
+      /> */}
+      <Button
+        title='Ir para QRScanner'
+        onPress={() => navigation.navigate('QRCode')}
       />
       {/* Opcao para o Botao abaixo, usando Touchable Opacity */}
       <TouchableOpacity

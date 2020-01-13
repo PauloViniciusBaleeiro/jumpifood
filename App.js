@@ -3,6 +3,7 @@ import { createStackNavigator } from 'react-navigation-stack';
 import HomeScreen from './src/screens/HomeScreen';
 import MenuScreen from './src/screens/MenuScreen';
 import ListScreen from './src/screens/ListScreen';
+import QRCodeScreen from './src/screens/QRCodeScreen';
 import * as firebase from 'firebase';
 
 var firebaseConfig = {
@@ -23,7 +24,8 @@ const navigator = createStackNavigator(
   {
     Home: HomeScreen,
     Menu: MenuScreen,
-    Lista: ListScreen
+    Lista: ListScreen,
+    QRCode: QRCodeScreen,
   },
   {
     initialRouteName: 'Menu',
