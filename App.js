@@ -1,10 +1,36 @@
-import { createStackNavigator, createAppContainer } from 'react-navigation';
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
 import HomeScreen from './src/screens/HomeScreen';
-import LayoutScreen from './src/screens/LayoutScreen';
+import MenuScreen from './src/screens/MenuScreen';
+import ListScreen from './src/screens/ListScreen';
+import * as firebase from 'firebase';
 
-const navigator = createStackNavigator({
-  Home: HomeScreen,
-  Layout: LayoutScreen
-});
+var firebaseConfig = {
+  apiKey: "AIzaSyBc8Lss2vMiI_TLGeJSMzKWyZxM1kfs2O4",
+  authDomain: "jumpifood.firebaseapp.com",
+  databaseURL: "https://jumpifood.firebaseio.com",
+  projectId: "jumpifood",
+  storageBucket: "jumpifood.appspot.com",
+  messagingSenderId: "914119637958",
+  appId: "1:914119637958:web:9b13c2b42427a7cabf50c7",
+  measurementId: "G-8E4JX8GXDH"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+// firebase.analytics();
 
-export default createAppContainer(navigator);
+const navigator = createStackNavigator(
+  {
+    Home: HomeScreen,
+    Menu: MenuScreen,
+    Lista: ListScreen
+  },
+  {
+    initialRouteName: 'Menu',
+    defaultNavigationOptions: {
+      title: 'App Base'
+    }
+  }
+);
+
+export default createAppContainer(navigator, firebaseConfig);
