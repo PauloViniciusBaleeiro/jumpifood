@@ -6,7 +6,7 @@ import ListScreen from './src/screens/ListScreen';
 import QRCodeScreen from './src/screens/QRCodeScreen';
 import * as firebase from 'firebase';
 
-var firebaseConfig = {
+const firebaseConfig = {
   apiKey: "AIzaSyBc8Lss2vMiI_TLGeJSMzKWyZxM1kfs2O4",
   authDomain: "jumpifood.firebaseapp.com",
   databaseURL: "https://jumpifood.firebaseio.com",
@@ -30,7 +30,7 @@ const navigator = createStackNavigator(
   {
     initialRouteName: 'Menu',
     defaultNavigationOptions: {
-      title: 'App Base'
+      title: 'Jumpi Food'
     }
   }
 );
