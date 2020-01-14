@@ -41,6 +41,7 @@ export default function App({ navigation }) {
   // storeCardapio(3,'creperia',3,'peito de peru e salada',17.50,'');
   // storeCardapio(3,'creperia',4,'morango com nutella',18.00,'');
   // storeCardapio(3,'creperia', 5,'cerveja lata',6.50,'');
+  storeCardapio(3,'creperia', 6,'taça vinho',9.50,'');
 
   useEffect(() => {
     (async () => {

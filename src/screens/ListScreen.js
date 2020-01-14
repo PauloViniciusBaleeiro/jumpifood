@@ -24,7 +24,6 @@ const ListScreen = ({ navigation }) => {
         data={lista}
         renderItem={({ item }) => {
           return <Text style={styles.list}>Sabor: {item.sabor}</Text>
-          <Text style={styles.list}>Tamanho: {item.tamnho}</Text>;
         }}
       />
     </View>
